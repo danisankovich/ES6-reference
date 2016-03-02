@@ -269,3 +269,16 @@
 // }
 // object.f1();
 //outpute = Window Window Window
+//this inside the f1 functions copies the this value of the global scope, as f1 lies in the global scope
+//this inside f2 copies the this value of f1, as f2 lies in the f1 scope.
+
+//Other differences between the arrow and traditional functions
+//the arrow funcitons cannot be used as object constructors (new operator cannot be applied on them.)
+
+/////////////////////////////////////
+/////////////////////////////////////
+/////////////////////////////////////
+
+//The Enhanced Object Literals
+
+//Defining properties
