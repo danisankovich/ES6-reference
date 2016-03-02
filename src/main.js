@@ -222,4 +222,50 @@
 //////////////////////////////////////////
 //////////////////////////////////////////
 
-//Arrow Functions
+//Arrow Functions (arrow functions are the anonymous functions)
+
+// let circleArea = (pi, r) => {
+//   let area = pi * r * r;
+//   return area;
+// };
+// let result = circleArea(3.14, 3);
+// console.log(result);
+
+//if an arrow function contains just one statement, then you don't have to use
+//the {} brackets to wrap the code.
+
+// let circleArea = (pi, r) => pi * r * r;
+// let result = circleArea(3.14, 3);
+// console.log(result)
+
+//value of 'this' in an arrow function
+//in the arrow functions, the value of this keyword is the same as the value of this
+//keyword of the enclosing scope(the global or function scope)
+
+//traditional "this"
+// var object = {
+//   f1: function() {
+//     console.log(this);
+//     var f2 = function() {
+//       console.log(this);
+//     }
+//     f2();
+//     setTimeout(f2, 2000);
+//   }
+// };
+// object.f1();
+// //output = Object Window Window
+
+//ES6 arrow functions this
+// var object = {
+//   f1: () => {
+//     console.log(this);
+//     var f2 = () => {
+//       console.log(this);
+//     }
+//     f2();
+//     setTimeout(f2, 2000)
+//   }
+// }
+// object.f1();
+//outpute = Window Window Window
